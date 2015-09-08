@@ -5,7 +5,6 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Data;
 using System.Diagnostics;
-
 /// <summary>
 /// The GameStates represent the state of the Battleships game play.
 /// This is used to control the actions and view displayed to
@@ -54,3 +53,10 @@ public enum GameState
 	/// </summary>
 	Quitting
 }
+
+//=======================================================
+//Service provided by Telerik (www.telerik.com)
+//Conversion powered by NRefactory.
+//Twitter: @telerik
+//Facebook: facebook.com/telerik
+//=======================================================
