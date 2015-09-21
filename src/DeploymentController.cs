@@ -5,6 +5,13 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using SwinGameSDK;
+using static GameController;
+using static UtilityFunctions;
+using static GameResources;
+using static DiscoveryController;
+using static EndingGameController;
+using static MenuController;
+using static HighScoreController;
 
 /// <summary>
 /// The DeploymentController controls the players actions
@@ -138,7 +145,7 @@ static class DeploymentController
 		//DrawShips
 		foreach (ShipName sn in Enum.GetValues(typeof(ShipName))) {
 			int i = 0;
-			i = Conversion.Int(sn) - 1;
+			i = ((int) sn) - 1;
 			if (i >= 0) {
 				if (sn == _selectedShip) {
 					SwinGame.DrawBitmap(GameImage("SelectedShip"), SHIPS_LEFT, SHIPS_TOP + i * SHIPS_HEIGHT);
