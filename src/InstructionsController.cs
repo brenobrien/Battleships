@@ -13,7 +13,7 @@ using static DiscoveryController;
 using static EndingGameController;
 using static MenuController;
 
-static class HighScoreController
+static class InstructionsController
 {
 	
 }
