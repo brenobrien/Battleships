@@ -16,7 +16,7 @@ using static HighScoreController;
 /// <summary>
 /// The menu controller handles the drawing and user interactions
 /// from the menus in the game. These include the main menu, game
-/// menu and the settings m,enu.
+/// menu and the settings menu.
 /// </summary>
 
 static class MenuController
@@ -33,6 +33,7 @@ static class MenuController
 			"PLAY",
 			"SETUP",
 			"SCORES",
+			"INSTRUCTIONS",
 			"QUIT"
 		},
 		new string[] {
@@ -64,6 +65,7 @@ static class MenuController
 	private const int MAIN_MENU_TOP_SCORES_BUTTON = 2;
 
 	private const int MAIN_MENU_QUIT_BUTTON = 3;
+	private const int MAIN_MENU_INSTRUCTIONS_BUTTON = 4;
 	private const int SETUP_MENU_EASY_BUTTON = 0;
 	private const int SETUP_MENU_MEDIUM_BUTTON = 1;
 	private const int SETUP_MENU_HARD_BUTTON = 2;
@@ -279,6 +281,9 @@ static class MenuController
 				break;
 			case MAIN_MENU_QUIT_BUTTON:
 				EndCurrentState();
+				break;
+			case MAIN_MENU_INSTRUCTIONS_BUTTON:
+				AddNewState(GameState.ViewingInstructions);
 				break;
 		}
 	}

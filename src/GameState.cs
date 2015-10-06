@@ -12,6 +12,7 @@ using static DiscoveryController;
 using static EndingGameController;
 using static MenuController;
 using static HighScoreController;
+using static InstructionsController;
 
 /// <summary>
 /// The GameStates represent the state of the Battleships game play.
@@ -59,7 +60,12 @@ public enum GameState
 	/// <summary>
 	/// The player has quit. Show ending credits and terminate the game
 	/// </summary>
-	Quitting
+	Quitting,
+	
+	/// <summary>
+	/// Button on main menu to look at how to play the game
+	/// </summary>
+	ViewingInstructions
 }
 
 //=======================================================
