@@ -18,8 +18,8 @@ public static class GameResources
 
 	private static void LoadFonts()
 	{
-		NewFont("ArialLarge", "arial.ttf", 90);
-		NewFont("Courier", "cour.ttf", 20);
+		NewFont("ArialLarge", "arial.ttf", 80);
+		NewFont("Courier", "cour.ttf", 15);
 		NewFont("CourierSmall", "cour.ttf", 15);
 		NewFont("Menu", "ffaccess.ttf", 15);
 	}
