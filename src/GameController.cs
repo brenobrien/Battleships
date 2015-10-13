@@ -12,6 +12,7 @@ using static DiscoveryController;
 using static EndingGameController;
 using static MenuController;
 using static HighScoreController;
+using static InstructionsController;
 
 /// <summary>
 /// The GameController is responsible for controlling the game,
@@ -301,6 +302,9 @@ public static class GameController
 			case GameState.ViewingHighScores:
 				HandleHighScoreInput();
 				break;
+			case GameState.ViewingInstructions:
+				HandleInstructionsInput();
+				break;
 		}
 
 		UpdateAnimations();
@@ -337,6 +341,9 @@ public static class GameController
 				break;
 			case GameState.ViewingHighScores:
 				DrawHighScores();
+				break;
+			case GameState.ViewingInstructions:
+				DrawInstructions();
 				break;
 		}
 
